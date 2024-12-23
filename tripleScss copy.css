@@ -1,0 +1,227 @@
+body {
+
+background: linear-gradient(135deg, #4b2ff6, #9d50bb, #6eebf4, #4b2ff6);
+background-size: 400% 400%; /* Enlarges the gradient for smooth animation */
+animation: gradientAnimation 8s ease infinite; /* Creates moving effect */
+height: 100vh;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-family: Arial, sans-serif;
+position: relative;
+
+}
+  
+  @keyframes gradientAnimation {
+
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+
+}
+
+h1{
+
+text-align: center;
+font-family: 'roboto condensed', sans-serif;
+font-size: 400%;
+z-index: 1;
+
+}
+
+.container{
+
+    top: 10.5%;
+    position: absolute;
+    text-align: center;
+    height: 170%;
+    width: 90%;
+    background-color: black;
+    z-index: -1;
+    border-radius: 30px;
+
+}
+
+.heading{
+
+margin-top: 15%;
+text-align: center;
+
+}
+
+.biglogo{
+
+width: 80%;
+height: auto;
+
+}
+
+.heading p{
+
+margin-top: -15%;
+font-size: 150%;
+
+}
+
+nav{
+
+position: absolute;
+top: 15%;
+left: 50%;
+transform: translateX(-50%);
+width: auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+z-index: 1000;
+font-size: 250%;
+
+}
+
+nav ul{
+
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+align-items: center;
+font-size: 120%;
+
+}
+
+nav ul li {
+
+margin: 0 5px;
+
+}
+
+nav ul a{
+
+color: white;
+padding: 10px 10px;
+font-size: 50%;
+text-decoration: none;
+
+}
+
+nav > a{
+
+color: white;
+
+}
+
+nav a{
+
+text-decoration: none;
+
+}
+
+nav a.current{
+
+text-decoration: underline;
+
+}
+
+.about{
+
+position: absolute;
+margin-top: -10%;
+text-align: center;
+width: 100%;
+max-width: 80%;
+
+}
+
+.about h1{
+
+font-size: 350%;
+
+}
+
+.about p{
+
+font-size: 115%;
+
+}
+
+.content{
+
+position: absolute;
+margin-top: 40%;
+margin-left: 12%;
+display: flex;
+align-items: center;
+
+}
+
+.content img{
+
+width: 30%;
+height: auto;
+margin-right: 20px;
+border-radius: 10px;
+
+}
+
+.content p{
+
+margin-top: 1%;
+max-width: 100%;
+width: 58%;
+font-size: 130%;
+
+}
+
+h2{
+
+position: absolute;
+margin-top: 95%;
+font-size: 250%;
+
+}
+
+.socials{
+
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;    
+gap: 50px;
+margin-top:108%;
+
+}
+
+.sociallogo img{
+
+width: 4rem;
+height: auto;
+transition: transform 0.2s ease-in-out;
+
+}
+
+.sociallogo{
+
+transition: 0.2s ease-in-out;
+
+}
+
+.whitespace{
+
+margin-top: 135%;
+    
+}
+
+.sociallogo:hover{
+
+transform: scale(1.1, 1.1);
+
+}
