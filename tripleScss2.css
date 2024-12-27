@@ -52,22 +52,44 @@ border-radius: 30px;
 
 .container2{
     
+top: 10.5%;
+position: absolute;
+text-align: center;
+height: 205%;
+width: 90%;
+background-color: black;
+z-index: -1;
+border-radius: 30px;
+        
+}
+
+.container3{
+    
     top: 10.5%;
     position: absolute;
     text-align: center;
-    height: 205%;
+    height: 140%;
     width: 90%;
     background-color: black;
     z-index: -1;
     border-radius: 30px;
-        
-    }
+            
+}
 
 .heading{
 
+position: absolute;
 margin-top: -10%;
 text-align: center;
 
+}
+
+.heading2{
+
+position: absolute;
+margin-top: -10%;
+text-align: center;
+    
 }
 
 .biglogo{
@@ -292,12 +314,6 @@ text-decoration: none;
 text-decoration: underline;
         
 }
-    
-.pages a.current{
-    
-text-decoration: underline;
-    
-}
 
 .whitespace{
 
@@ -307,9 +323,15 @@ margin-top: 150%;
 
 .whitespace2{
 
-    margin-top: 170%;
+margin-top: 170%;
     
-    }
+}
+
+.whitespace3{
+
+margin-top: 108%;
+        
+}
 
 .whit{
 
@@ -320,89 +342,196 @@ color: #f0f0f0;
 
 .unitcontainer{
 
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 35px;
-    margin-top: 21%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 35px;
+margin-top: 21%;
     
-    }
+}
     
-    .unitcontainer2{
+.unitcontainer2{
     
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 35px;
-    margin-top: 71%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 35px;
+margin-top: 71%;
         
-    }
+}
     
-    .unitcontainer3{
+.unitcontainer3{
     
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 35px;
-    margin-top: 122%;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+gap: 35px;
+margin-top: 122%;
             
-    }
+}
     
-    .unit{
+.unit{
     
-    width: 200px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 10px;
-    text-align: center;
+width: 200px;
+background-color: #f0f0f0;
+border-radius: 8px;
+overflow: hidden;
+margin: 10px;
+text-align: center;
     
-    }
+}
     
-    .unit img{
+.unit img{
     
-    width: 100%;
-    height: auto;
+width: 100%;
+height: auto;
     
-    }
+}
     
-    .memcontent{
+.memcontent{
     
-    padding: 16px;
+padding: 16px;
     
-    }
+}
     
-    .memcontent h2{
+.memcontent h2{
     
-    font-size: 20px;
-    margin-bottom: 8px;
-    color: black;
+font-size: 20px;
+margin-bottom: 8px;
+color: black;
     
-    }
+}
     
-    .memcontent .btn{
+.memcontent .btn{
     
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 16px;
-    color: #fff;
-    transition: 0.2s ease-in-out;
+display: inline-block;
+padding: 8px 16px;
+background-color: #333;
+text-decoration: none;
+border-radius: 4px;
+margin-top: 16px;
+color: #fff;
+transition: 0.2s ease-in-out;
 
     
-    }
+}
 
 .btn:hover{
 
 transform: scale(1.05, 1.05);
 background-color: black;
 
+}
+
+.album{
+
+text-align: center;
+margin-top: 55%;
+
+}
+
+.album p{
+
+font-size: 180%;
+
+}
+
+.album2{
+
+text-align: center;
+margin-top: 55%;
+    
+}
+    
+.album2 p{
+    
+font-size: 125%;
+    
+}    
+
+.album3{
+
+text-align: center;
+margin-top: 35%;
+        
+}
+
+.album3 p{
+    
+font-size: 125%;
+        
+}    
+
+#titlet{
+
+font-size: 270%;
+
+}
+
+#trackl{
+
+font-size: 260%;
+
+}
+
+.songnav{
+
+display: flex;
+justify-content: center;
+padding: 0;
+margin: 0;
+font-size: 300%;
+margin-top: 75%;
+text-decoration: none;
+
+}
+
+.songnav ul{
+
+display: flex;
+gap: 50px;
+list-style-type: none;
+padding: 0;
+margin: 0;
+
+}
+
+.songnav ul li{
+
+text-align: center;
+
+}
+
+.songnav2{
+
+display: flex;
+justify-content: center;
+padding: 0;
+margin: 0;
+font-size: 300%;
+margin-top: 55%;
+text-decoration: none;
+    
+}
+    
+.songnav2 ul{
+    
+display: flex;
+gap: 50px;
+list-style-type: none;
+padding: 0;
+margin: 0;
+    
+}
+    
+.songnav2 ul li{
+    
+text-align: center;
+    
 }

@@ -31,19 +31,18 @@ position: relative;
 h1{
 
 text-align: center;
-font-family: tahoma, sans-serif;
+font-family: 'roboto condensed', sans-serif;
 font-size: 400%;
 z-index: 1;
-font-weight: 600;
 
 }
 
 .container{
 
-margin-top: 10%;
+top: 10%;
 position: absolute;
 text-align: center;
-height: 100%;
+height: 150%;
 width: 90%;
 background-color: black;
 z-index: -1;
@@ -53,7 +52,7 @@ border-radius: 30px;
 
 .heading{
 
-margin-top: 18%;
+margin-top: -15%;
 text-align: center;
 
 }
@@ -67,7 +66,7 @@ height: auto;
 
 .heading p{
 
-margin-top: -18%;
+margin-top: -15%;
 font-size: 150%;
 
 }
@@ -132,6 +131,37 @@ text-decoration: underline;
 
 }
 
+.content{
+
+position: absolute;
+margin-left: 20%;
+margin-top: 40%;
+display: flex;
+align-items: center;
+text-align: center;
+    
+}
+    
+.content img{
+    
+width: 30%;
+height: auto;
+margin-right: 20px;
+border-radius: 10px;
+    
+}
+    
+.content p{
+    
+margin-top: 1%;
+max-width: 100%;
+width: 58%;
+font-size: 150%;
+text-align: left;
+    
+}
+    
+
 .about{
 
 margin-top: 10%;
@@ -153,8 +183,68 @@ font-size: 115%;
 
 }
 
+.memselect{
+
+position: absolute;
+margin-top: 60%;
+left: 50%;
+transform: translateX(-50%);
+max-width: 80%;
+width: 150%; 
+overflow-x: auto; 
+overflow-y: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 3px 0;
+z-index: 1000;
+font-size: 250%;
+scroll-behavior: smooth;
+
+}
+
+.memselect ul{
+
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+align-items: center;
+
+}
+
+.memselect ul li{
+
+display: none;
+
+}
+
+.memselect ul li.visible{
+
+display: inline-block;
+
+}
+
+.memselect ul a{
+
+color: #333;
+padding: 10px;
+font-size: 50%;
+text-decoration: none;
+
+}
+
+.memselect a.current{
+
+text-decoration: underline;
+font-weight: bold;
+transform: scale(1.1, 1.1);
+color: white; 
+
+}
+
 .whitespace{
 
-margin-top: 68%;
+margin-top: 117%;
 
 }
