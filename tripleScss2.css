@@ -36,13 +36,26 @@ font-size: 400%;
 z-index: 1;
     
 }
+
+.container1{
+    
+    top: 10.5%;
+    position: absolute;
+    text-align: center;
+    height: 190%;
+    width: 90%;
+    background-color: black;
+    z-index: -1;
+    border-radius: 30px;
+        
+}
     
 .container{
     
 top: 10.5%;
 position: absolute;
 text-align: center;
-height: 185%;
+height: 195%;
 width: 90%;
 background-color: black;
 z-index: -1;
@@ -270,6 +283,22 @@ z-index: 1000;
 font-size: 250%;
     
 }
+
+.page2{
+
+    position: absolute;
+    top: 195%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    font-size: 250%;
+        
+    }
     
 .page ul{
     
@@ -317,7 +346,7 @@ text-decoration: underline;
 
 .whitespace{
 
-margin-top: 150%;
+margin-top: 160%;
 
 }
 
@@ -431,8 +460,9 @@ background-color: black;
 
 .album{
 
+position: absolute;
 text-align: center;
-margin-top: 55%;
+top: 45%;
 
 }
 
@@ -470,6 +500,7 @@ font-size: 125%;
 
 #titlet{
 
+
 font-size: 270%;
 
 }
@@ -487,7 +518,7 @@ justify-content: center;
 padding: 0;
 margin: 0;
 font-size: 300%;
-margin-top: 75%;
+margin-top: 82%;
 text-decoration: none;
 
 }
@@ -504,7 +535,9 @@ margin: 0;
 
 .songnav ul li{
 
+color: #333;
 text-align: center;
+transition: transform 0.2s ease-in-out;
 
 }
 
@@ -532,6 +565,256 @@ margin: 0;
     
 .songnav2 ul li{
     
+    color: #333;
 text-align: center;
+transition: transform 0.2s ease-in-out;
     
+}
+
+.songnav li:hover{
+
+
+transform: scale(1.1, 1.1);
+
+}
+
+.songnav2 li:hover{
+
+transform: scale(1.1, 1.1);
+    
+}
+
+.imgcontainer{
+
+padding: 2rem;
+margin-top: 75%;
+margin-left: 50%;
+transform: translateX(-60%);
+
+}
+
+.slider-wrapper{
+
+position: relative;
+max-width: 500px;
+margin: 0 auto;
+
+}
+
+.slider{
+
+display: flex;
+aspect-ratio: 0.68 / 1;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+border-radius: 0.5rem;
+-webkit-overflow-scrolling: touch
+height: 50%;
+width: auto;
+scrollbar-width: none;
+-ms-overflow-style: none;
+
+}
+
+.slider::-webkit-scrollbar{
+
+display: none;
+
+}
+
+.slider img{
+
+flex: 0 0 auto;
+width: 100%;
+scroll-snap-align: start;
+object-fit: cover; 
+
+}
+
+.slider-nav{
+
+display: flex;
+column-gap: 1rem;
+position: absolute;
+top: 1.25rem;
+left: 42%;
+transform: transaltex(-50%);
+z-index: 1;
+
+}
+    
+
+.slider-nav a{
+
+width: 0.5rem;
+height: 0.5rem;
+border-radius: 50%;
+background-color: #fff;
+opacity: 0.75;
+transition: opacity ease-in-out 250ms;
+
+}
+
+.slider-nav a:hover{
+
+opacity: 1; 
+
+}
+
+.slider-nav2{
+
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 27.5%;
+    transform: transaltex(-50%);
+    z-index: 1;
+    
+}
+
+.slider-nav2 a{
+
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease-in-out 250ms;
+    
+}
+
+.slider-nav2 a:hover{
+
+    opacity: 1; 
+    
+}
+
+.slider-nav3{
+
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 32.5%;
+    transform: transaltex(-50%);
+    z-index: 1;
+    
+}
+
+.slider-nav3 a{
+
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease-in-out 250ms;
+    
+}
+
+.slider-nav3 a:hover{
+
+    opacity: 1; 
+    
+}
+
+
+.slider-nav4{
+
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 39%;
+    transform: transaltex(-50%);
+    z-index: 1;
+    
+}
+
+.slider-nav4 a{
+
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease-in-out 250ms;
+    
+}
+
+.slider-nav4 a:hover{
+
+    opacity: 1; 
+    
+}
+
+.slider-nav5{
+
+    display: flex;
+    column-gap: 0.7rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 4.5%;
+    transform: transaltex(-50%);
+    z-index: 1;
+    
+}
+
+.slider-nav5 a{
+
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease-in-out 250ms;
+    
+}
+
+.slider-nav5 a:hover{
+
+    opacity: 1; 
+    
+}
+
+.slider-nav6{
+
+    display: flex;
+    column-gap: 0.7rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 28.5%;
+    transform: transaltex(-50%);
+    z-index: 1;
+    
+}
+
+.slider-nav6 a{
+
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease-in-out 250ms;
+    
+}
+
+.slider-nav6 a:hover{
+
+    opacity: 1; 
+    
+}
+
+
+.slider-caption {
+
+text-align: center;
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 1rem;
+color: #fff;
+
 }

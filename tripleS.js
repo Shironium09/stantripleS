@@ -40,9 +40,41 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.querySelector('.slider').addEventListener('scroll', () => {
+    // Get all the images and the current slider container
+    const images = document.querySelectorAll('.slider img');
+    const slider = document.querySelector('.slider');
+    
+    // Get the width of one image (since all images have equal width in this case)
+    const imageWidth = slider.scrollWidth / images.length;
+    
+    // Find out the index of the currently visible image
+    const visibleIndex = Math.floor(slider.scrollLeft / imageWidth);
 
+    // Update the caption
+    const captionElement = document.getElementById('slider-caption');
+    captionElement.textContent = images[visibleIndex].dataset.caption;
+});
 
+// Existing code for clicking nav buttons
+document.querySelectorAll('.slider-nav a').forEach((navLink, index) => {
+    navLink.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default link behavior
 
+        // Update the caption
+        const images = document.querySelectorAll('.slider img');
+        const captionElement = document.getElementById('slider-caption');
+        captionElement.textContent = images[index].dataset.caption;
+
+        // Scroll to the corresponding image
+        const slider = document.querySelector('.slider');
+        const imageWidth = slider.scrollWidth / slider.childElementCount;
+        slider.scrollTo({
+            left: imageWidth * index,
+            behavior: 'smooth',
+        });
+    });
+});
 
 
 
